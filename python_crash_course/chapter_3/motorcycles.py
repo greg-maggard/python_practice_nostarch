@@ -74,6 +74,38 @@ print(motorcycles)
 print(f"\nA {too_expensive.title()} is too expensive for me.")
 
 #Try it Yourself:
+#3-4. Guest List:
+guests = ['Marcus Aurelius', 'Benjamin Franklin', 'Carl Sagan']
+for i in range(len(guests)):
+    print(f"Hi there, {guests[i]}, would you like to join me for dinner?")
+print('Unfortunately, Benjamin Franklin is otherwised disposed.')
+
+#3-5. Changing Guest List:
+guests[1] = 'Freddie Mercury'
+for i in range(len(guests)):
+    print(f"Hi there, {guests[i]}, would you like to join me for dinner?")
+
+
+#3-6. Changing Guest List:
+print("I found a bigger table, so I'm going to invite more people to join us.")
+guests.insert(0, 'Seneca')
+guests.insert(2, 'Albert Einstein')
+guests.append("Abraham Lincoln")
+for i in range(len(guests)):
+    print(f"Hi there, {guests[i]}, would you like to join me for dinner?")
+print("Unfortunately, it looks like I can't invite more than two people.")
+
+guests
+#3-7. Shrinking Guest List:
+for i in range(len(guests) - 2):
+    uninvited = guests.pop()
+    print(f"I am so sorry, {uninvited}, but I have to rescind the invite to dinner.")
+for i in range(len(guests)):
+    print(f"Hey there, {guests[i]}, I hope you're still able to make it!")
+del guests[1]
+del guests[0]
+print(guests)
+
 
 
 
