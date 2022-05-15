@@ -106,7 +106,51 @@ del guests[1]
 del guests[0]
 print(guests)
 
+#3-8. Seeing the World:
+
+places = ['Iceland', 'Greece', 'Japan', 'New Zealand', 'China']
+print(places)
+
+print(sorted(places))
+print(places)
+
+print(sorted(places, reverse = True))
+print(places)
+
+places.reverse()
+print(places)
+places.reverse()
+print(places)
+
+places.sort()
+print(places)
+places.sort(reverse = True)
+print(places)
+
+#3-9. Dinner Guests:
+print(len(guests))
+## This prints out 0, because the last step of those exercises was to remove all of the entries. 
+
+#3-10. Every Function:
+nouns = ['wrench', 'couch', 'horse', 'Cairo', 'lake']
+nouns[3]
+nouns.append('Ferrari')
+print(nouns)
+nouns.insert(2, 'computer')
+print(nouns)
+nouns.pop()
+print(nouns)
+nouns.remove('horse')
+print(nouns)
+print(sorted(nouns))
+print(nouns)
+nouns.sort()
+print(nouns)
+nouns.sort(reverse = True)
+print(nouns)
 
 
-
-
+#3-11. Intentional Error:
+## Trying to create an index error by calling index that does not exist within a list:
+print(nouns)
+print(nouns[6])
