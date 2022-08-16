@@ -58,5 +58,12 @@ threes = list(range(3, 31, 3))
 print(threes)
 
 #4-8 Cubes:
-cubes = list([value ** 3 for value in range(1, 11)])
-print(cubes)
+cubes = []
+for i in range(1, 11):
+    cubes.append(i ** 3)
+for i in cubes:
+    print(i)
+
+#4-9 Cubes Comprehension (similar to the above, but in comprehension form):
+cubes_list = list([value ** 3 for value in range(1, 11)])
+print(cubes_list)
