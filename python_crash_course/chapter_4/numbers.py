@@ -67,3 +67,5 @@ for i in cubes:
 #4-9 Cubes Comprehension (similar to the above, but in comprehension form):
 cubes_list = list([value ** 3 for value in range(1, 11)])
 print(cubes_list)
+
+#I want to come back here and add some notes. 
